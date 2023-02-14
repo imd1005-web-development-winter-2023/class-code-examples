@@ -1,0 +1,163 @@
+/*
+  Universal selector
+  https://developer.mozilla.org/en-US/docs/Web/CSS/Universal_selectors
+ */
+
+/*
+
+Universal selector:
+
+* {
+  background-color: black;
+}
+*/
+
+/* But generally we don't use it very often */
+
+/*
+  Type selectors
+  https://developer.mozilla.org/en-US/docs/Web/CSS/Type_selectors
+ */
+
+body {
+  background-color: beige;
+}
+
+p {
+  color: darkolivegreen;
+}
+
+h1 {
+  color: blue;
+}
+
+/*
+  Class selectors
+  https://developer.mozilla.org/en-US/docs/Web/CSS/Class_selectors
+*/
+
+.darkbackground {
+  background-color: darkslategray;
+  color: beige;
+}
+
+/*
+  ID selectors
+  https://developer.mozilla.org/en-US/docs/Web/CSS/ID_selectors
+*/
+
+#main-title {
+  color: red;
+}
+
+/*
+  Attribute selectors
+  https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors
+*/
+
+h2[data-imd1005] {
+  color: violet;
+}
+
+/*
+  Grouping selectors
+  https://developer.mozilla.org/en-US/docs/Web/CSS/Selector_list
+*/
+
+/* You can do this:
+h1 {
+  color: darkblue;
+}
+
+h2 {
+  color: red;
+}
+
+h3 {
+  color: red;
+}
+*/
+
+/* But really you want to do this: */
+
+h1,
+h2,
+h3 {
+  color: darkblue;
+}
+
+/*
+  Descendant combinator
+  https://developer.mozilla.org/en-US/docs/Web/CSS/Descendant_combinator
+*/
+
+main p {
+  background-color: red;
+}
+
+/*
+  Child combinator
+  https://developer.mozilla.org/en-US/docs/Web/CSS/Child_combinator
+*/
+
+ul > li {
+  color: red;
+}
+
+ul li {
+  color: red;
+}
+
+/*
+  Pseudo classes
+  https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes
+*/
+
+a {
+  color: green;
+}
+
+a:hover {
+  color: chartreuse;
+  font-weight: 900;
+  background-color: white;
+}
+
+a:focus {
+  color: red;
+  font-weight: 900;
+  background-color: white;
+}
+
+h1 + p {
+  margin-top: 50px;
+  background-color: green;
+}
+
+/*
+  Pseudo elements
+  Example: p::first-letter
+  https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements
+*/
+
+p::first-letter {
+  font-size: 3rem;
+}
+
+p::first-line {
+  color: blue;
+}
+
+/*
+  Compound selector
+  Example: a.link-accent {}
+*/
+
+a.accent-link.dark {
+  color: red;
+}
+
+/******************************/
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}

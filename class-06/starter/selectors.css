@@ -1,0 +1,60 @@
+/*
+  Universal selector
+  https://developer.mozilla.org/en-US/docs/Web/CSS/Universal_selectors
+ */
+
+/*
+  Type selectors
+  https://developer.mozilla.org/en-US/docs/Web/CSS/Type_selectors
+ */
+
+/*
+  Class selectors
+  https://developer.mozilla.org/en-US/docs/Web/CSS/Class_selectors
+*/
+
+/*
+  ID selectors
+  https://developer.mozilla.org/en-US/docs/Web/CSS/ID_selectors
+*/
+
+/*
+  Attribute selectors
+  https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors
+*/
+
+/*
+  Grouping selectors
+  https://developer.mozilla.org/en-US/docs/Web/CSS/Selector_list
+*/
+
+/*
+  Descendant combinator
+  https://developer.mozilla.org/en-US/docs/Web/CSS/Descendant_combinator
+*/
+
+/*
+  Child combinator
+  https://developer.mozilla.org/en-US/docs/Web/CSS/Child_combinator
+*/
+
+/*
+  Pseudo classes
+  https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes
+*/
+
+/*
+  Pseudo elements
+  Example: p::first-letter
+  https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements
+*/
+
+/*
+  Compound selector
+  Example: a.link-accent {}
+*/
+
+/******************************/
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
