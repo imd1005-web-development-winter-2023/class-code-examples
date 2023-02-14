@@ -1,0 +1,233 @@
+/*
+  Colour palette
+  https://coolors.co/palette/0d1b2a-1b263b-415a77-778da9-e0e1dd
+  0d1b2a
+  1b263b
+  415a77
+  778da9
+  e0e1dd
+*/
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #fff;
+}
+
+/****** Button classes *******/
+.btn-primary {
+  background-color: #2d5c8a;
+  padding: 1.5rem 2rem;
+  color: #e0e1dd;
+  font-size: 1.5rem;
+  text-decoration: none;
+  border-radius: 15px;
+  font-weight: 800;
+}
+
+.btn-primary:hover {
+  background-color: #4183c5;
+  color: #fff;
+}
+
+.btn-outline {
+  background-color: transparent;
+  padding: 1.5rem 2rem;
+  color: #fff;
+  font-size: 1.5rem;
+  text-decoration: none;
+  border-radius: 15px;
+  font-weight: 800;
+  border: 2px solid #fff;
+}
+
+.btn-outline:hover {
+  background-color: #5f99d4;
+  color: #fff;
+}
+
+/****** Container *******/
+.container-large {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.container-small {
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+/****** Blog *******/
+.blog {
+  background-color: #fff;
+  padding: 6rem 0px;
+}
+
+.blog h2 {
+  font-size: 2.8rem;
+  text-align: center;
+}
+
+.blog--posts {
+  display: flex;
+  gap: 3.5rem;
+
+  list-style-type: none;
+  margin: 3rem 0px;
+  padding: 0px;
+}
+
+.blog--posts--image {
+  height: 14rem;
+  border-radius: 15px;
+
+  object-fit: cover;
+
+  margin-bottom: 1.5rem;
+}
+
+/****** Newsletter *******/
+.newsletter {
+  background-color: #fff;
+}
+
+.newsletter--flex {
+  margin: 9rem 0;
+  padding: 3rem 4rem;
+  background-color: #4183c5;
+  border-radius: 15px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.newsletter--flex--content {
+  color: #fff;
+  flex-basis: 70%;
+}
+
+.newsletter--flex--content h2 {
+  font-size: 2rem;
+}
+
+.newsletter--flex--content p {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+/****** Testimonial *******/
+.testimonial {
+  background-color: #9faab8;
+  padding: 8rem 0;
+}
+
+.testimonial blockquote {
+  font-size: 2rem;
+  font-style: italic;
+}
+
+.testimonial figcaption {
+  text-align: right;
+  font-size: 2rem;
+  color: #4e535a;
+}
+
+/****** Footer *******/
+.footer {
+  background-color: #0d1b2a;
+  padding: 5rem;
+  text-align: center;
+  color: #e0e1dd;
+  font-weight: 600;
+}
+
+/****** Hero *******/
+.hero {
+  background-color: #0d1b2a;
+  color: #fff;
+}
+
+.hero--flexbox {
+  margin: 0rem 2rem;
+  padding: 7rem 0;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero--flexbox--content {
+  width: 500px;
+  flex-grow: 1;
+  padding-right: 2rem;
+}
+
+.hero--flexbox--content h2 {
+  font-size: 3.5rem;
+  line-height: 1.1;
+  margin-bottom: 2rem;
+}
+
+.hero--flexbox--content p {
+  font-size: 1.4rem;
+  margin-bottom: 3rem;
+}
+
+.hero--flexbox img {
+  width: 45%;
+  border-radius: 15px;
+}
+
+/****** Header *******/
+.header {
+  background-color: #0d1b2a;
+  color: #eee;
+}
+
+.header--banner {
+  margin: 0 2rem;
+  padding: 3rem 0;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header--banner--logo {
+  height: 5rem;
+}
+
+.header--banner--nav ul {
+  display: flex;
+  gap: 3rem;
+
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.header--banner--nav ul li a {
+  color: #e0e1dd;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.header--banner--nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/****** Screen reader text *******/
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}

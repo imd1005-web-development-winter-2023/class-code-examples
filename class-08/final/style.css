@@ -1,0 +1,239 @@
+/*
+  Colour palette
+  https://coolors.co/palette/0d1b2a-1b263b-415a77-778da9-e0e1dd
+  0d1b2a
+  1b263b
+  415a77
+  778da9
+  e0e1dd
+*/
+
+/****** Body *******/
+body {
+  background-color: #1b263b;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/****** Container classes *******/
+.container--large {
+  max-width: 900px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container--small {
+  max-width: 750px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/****** Buttons styles *******/
+.btn--primary {
+  background-color: #415a77;
+  border-radius: 10px;
+  padding: 0.8rem 1.5rem;
+  text-decoration: none;
+  font-weight: 800;
+  color: #eee;
+}
+
+.btn--secondary {
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  padding: 0.8rem 1.5rem;
+  text-decoration: none;
+  font-weight: 800;
+  color: #eee;
+}
+
+.btn--primary:hover {
+  background-color: #5076a2;
+}
+
+.btn--secondary:hover {
+  background-color: #5383dd;
+}
+
+/****** Newsletter section *******/
+.newsletter {
+  padding: 5rem 0 5rem 0;
+  background-color: #fff;
+  color: #fff;
+}
+
+.newsletter--banner {
+  padding: 2rem 3rem;
+  background-color: #4975c5;
+  border-radius: 10px;
+}
+
+.newsletter--banner .newsletter--banner--flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.newsletter--banner
+  .newsletter--banner--flex
+  .newsletter--banner--flex--content {
+  width: 75%;
+  flex-shrink: 1;
+}
+
+/****** Testimonial section *******/
+.testimonial {
+  padding: 5rem 0 5rem 0;
+  background-color: #e0e1dd;
+}
+
+.testimonial blockquote {
+  font-size: 1.8rem;
+  font-style: italic;
+  font-weight: 100;
+  color: #1b263b;
+}
+
+.testimonial figcaption {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: #6a6a6a;
+  text-align: right;
+}
+
+/****** Blog section *******/
+.blog {
+  background-color: #fff;
+  padding: 5rem 0 5rem 0;
+}
+
+.blog h2 {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.blog .blog--posts {
+  margin: 3rem 0 3rem 0;
+  padding: 0;
+
+  display: flex;
+  justify-content: space-around;
+  gap: 3rem;
+
+  list-style-type: none;
+}
+
+.blog--posts--post--image {
+  height: 150px;
+  border-radius: 15px;
+  margin-bottom: 1rem;
+  object-fit: cover;
+}
+
+/****** Hero section *******/
+.hero {
+  background-color: #0d1b2a;
+  color: #e0e1dd;
+  padding: 7rem 0 8rem 0;
+}
+
+.hero--flex {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.hero--flex--image {
+  flex-basis: 40%;
+  height: 15rem;
+  background-color: #fff;
+
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.hero--flex--content {
+  margin-right: 3rem;
+  width: 60%;
+}
+
+.hero--flex--content h2 {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.hero--flex--content p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+/****** Footer classes *******/
+.footer {
+  padding: 4rem 0 4rem 0;
+  background-color: #1b263b;
+  color: #e0e1dd;
+  text-align: center;
+}
+
+/****** Header section *******/
+.header {
+  background-color: #0d1b2a;
+}
+
+.header--bar {
+  padding: 2rem 0rem 2rem 0rem;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header--bar--logo {
+  height: 3.5rem;
+  width: 3.5rem;
+}
+
+.header--bar--nav ul {
+  display: flex;
+  gap: 2rem;
+
+  list-style-type: none;
+}
+
+.header--bar--nav ul li {
+  font-weight: 800;
+}
+
+.header--bar--nav ul li a {
+  color: #e0e1dd;
+  text-decoration: none;
+}
+
+.header--bar--nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/****** Screen reader text *******/
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
