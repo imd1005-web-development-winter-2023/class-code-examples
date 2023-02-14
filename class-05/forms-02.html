@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Forms hello how are you</title>
+  </head>
+  <body>
+    <main>
+      <h1>Forms</h1>
+
+      <form>
+
+        <!-- Select -->
+        <label for="myfoodchoice">Choose food:</label>
+
+        <select id="myfoodchoice">
+          <option value="meat">Meat</option>
+          <option value="chips">Chips</option>
+          <option value="frenchFries">French fries</option>
+        </select>
+
+
+
+        <!-- Text area -->
+        <label for="mytextarea">Tell me your long story</label>
+        <textarea id="mytextarea" rows="10"></textarea>
+
+
+        <!-- Radio -->
+        <fieldset>
+          <legend>What day is it?</legend>
+
+          <input id="monday"
+          name="day" type="radio" />
+          <label for="monday">Monday</label>
+
+          <input id="tuesday"
+          name="day" type="radio" />
+          <label for="tuesday">Tuesday</label>
+
+          <input id="wednesday"
+          name="day" type="radio" />
+          <label for="wednesday">Wednesday</label>
+
+        </fieldset>
+
+
+
+        <!-- Slider -->
+        <label for="happy">How happy are you today</label>
+        <input type="range" id="happy"
+        name="happy" />
+
+        <!-- Number -->
+        <label for="studentno">Enter Student Number</label>
+        <input type="number" id="studentno"
+        name="studentno" />
+
+        <!-- Date -->
+        <label for="dob">Enter Date of Birth</label>
+        <input 
+        id="dob"
+        name="dob"
+        type="date">
+
+        <label for="username">Username</label>
+        <input id="username" 
+        name="username"
+        type="text" required="required" />
+  
+        <label for="password">Password</label>
+        <input id="password" 
+        name="password"
+        type="password" required="required" />
+  
+        
+        <button type="reset">Clear form</button>
+      
+        <!-- Submit button -->
+        <button type="submit">Login</button> 
+
+        <!-- Also a submit button - not my preferred approach
+        <input type="submit">
+        -->
+
+      </form>
+
+      
+
+    </main>
+    
+  </body>
+</html>

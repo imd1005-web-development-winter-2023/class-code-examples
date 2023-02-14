@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Forms</title>
+
+        <style>
+            label {
+                display: block;
+                margin-top: 1rem;
+            }
+
+        </style>
+    </head>
+    <body>
+        <main>
+            <h1>Forms Example</h1>
+
+            <form>
+
+                <fieldset>
+                    <legend>
+                        Title
+                    </legend>
+                    
+                <input type="radio" id="mister" for="mister" name="title" />
+                <label for="mister">Mister</label>
+
+                <input type="radio" id="miss" for="miss" name="title" />
+                <label for="miss">Miss</label>
+                       
+                </fieldset>
+
+                <label for="first-name">Name: </label>
+                <input type="text" name="first-name" id="first-name" required />
+
+                <label for="first-name">Name: </label>
+                <input type="text" name="first-name" id="first-name" required />
+
+                <br />
+            
+                <input type="number" />
+
+                <input type="date" />
+
+                <input type="range" />
+
+                <input type="email" />
+
+                <!-- Submit button but uses an input element -->
+                <input type="submit" />
+
+                <!-- Most use the button -->
+                <button type="submit">Submit</button>
+
+            </form>
+
+        </main>
+    </body>
+</html>
