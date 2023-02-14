@@ -1,0 +1,87 @@
+body {
+  background-color: red;
+}
+
+ul {
+  background-color: #09073e;
+  height: 400px;
+  margin: 0px;
+  padding: 10px;
+  list-style: none;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+ul > li {
+  width: 200px;
+  padding: 10px 20px;
+  color: #eee;
+  /*
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 1;
+  */
+
+  flex-basis: 100px;
+
+  text-align: center;
+}
+
+ul > li:nth-child(3) {
+  height: 100px;
+}
+
+ul > li:nth-child(6) {
+  height: 60px;
+}
+
+/* Colour palette
+ * https://coolors.co/palette/f72585-b5179e-7209b7-560bad-480ca8-3a0ca3-3f37c9-4361ee-4895ef-4cc9f0
+ */
+ul > li:nth-child(1) {
+  background-color: #f72585;
+}
+ul > li:nth-child(2) {
+  background-color: #b5179e;
+}
+ul > li:nth-child(3) {
+  background-color: #7209b7;
+}
+ul > li:nth-child(4) {
+  background-color: #560bad;
+}
+ul > li:nth-child(5) {
+  background-color: #480ca8;
+}
+ul > li:nth-child(6) {
+  background-color: #3a0ca3;
+}
+ul > li:nth-child(7) {
+  background-color: #3f37c9;
+}
+ul > li:nth-child(8) {
+  background-color: #4361ee;
+}
+ul > li:nth-child(9) {
+  background-color: #4895ef;
+}
+ul > li:nth-child(10) {
+  background-color: #4cc9f0;
+}
+
+/******************************/
+body {
+  background-color: #eee;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main h1 {
+  padding: 10px 0px;
+  text-align: center;
+  color: #eee;
+  background-color: black;
+}
