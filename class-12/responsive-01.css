@@ -11,6 +11,20 @@
   /* Always picks the smallest one */
   width: min(100%, 500px);
 
+  /*
+  Don't do this on it's own
+  width: 500px;
+  */
+
+  /*
+  This could be dangerous
+  height: 300px;
+
+  */
+
+  /* Do this if you need a height */
+  min-height: 400px;
+
   margin: 5rem auto 0 auto;
 }
 
