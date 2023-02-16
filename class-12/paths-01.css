@@ -1,0 +1,50 @@
+.content {
+  background-color: #1e590d;
+  padding: 3rem;
+  color: #fff;
+
+  /*
+  width: 100%;
+  max-width: 500px;
+  */
+
+  /* Always picks the smallest one */
+  width: min(100%, 500px);
+
+  /*
+  Don't do this on it's own
+  width: 500px;
+  */
+
+  /*
+  This could be dangerous
+  height: 300px;
+
+  */
+
+  /* Do this if you need a height */
+  min-height: 400px;
+
+  margin: 5rem auto 0 auto;
+}
+
+body {
+  color: #3c544a;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #cce3de;
+}
+
+header h2 {
+  padding: 2rem;
+  margin-bottom: 50px;
+  background-color: black;
+  color: #eaf4f4;
+  text-align: center;
+  font-size: 3rem;
+
+  background-color: #577769;
+}
+
+main {
+  margin: 0 1.3rem 5rem 1.3rem;
+}
