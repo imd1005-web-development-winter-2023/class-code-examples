@@ -3,8 +3,10 @@
   padding: 3rem;
   color: #fff;
 
+  /*
   width: 100%;
   max-width: 500px;
+  */
 
   /* Always picks the smallest one */
   width: min(100%, 500px);
