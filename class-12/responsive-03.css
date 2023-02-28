@@ -1,0 +1,35 @@
+.resp-flex-box {
+  background-color: bisque;
+  display: block;
+}
+
+@media screen and (min-width: 800px) {
+  .resp-flex-box {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.resp-flex-box img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.resp-flex-box h1 {
+  width: 100%;
+  border: 1px solid red;
+}
+
+body {
+  color: #3c544a;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #cce3de;
+}
+
+/* If device is more than 500px wide but less than 750px than use this css
+@media screen and (min-width: 500px) {
+  body {
+    background-color: #3c544a;
+  }
+}
+*/
