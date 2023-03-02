@@ -1,138 +1,59 @@
-let orignalArray = ["one", "two", "three"];
+console.log("Hello world");
 
-let copyArray = orignalArray;
+let numberOfStudents = 52;
 
-copyArray[0] = "three";
+console.log(numberOfStudents);
 
-console.log(orignalArray, copyArray);
+let isAwesome = true;
 
-function isEven(num) {
-  if (num % 2 === 0) {
-    console.log("Even");
-  }
-}
+console.log(isAwesome);
 
-isEven(300);
-isEven(55);
-isEven(44);
-isEven(99);
-isEven(22);
-isEven(2400);
+// Declare an object literal
+const elephant = {
+  name: "Jimbo",
+  age: 200,
+  isMarried: false,
+};
 
-let ages = 20;
-let cost = null;
+// Access the whole object literal
+console.log(elephant);
 
-if (ages > 18) {
-  cost = 20;
-} else if (ages > 10) {
-  cost = 10;
-} else if (ages > 5) {
-  cost = 5;
-} else {
-  cost = 0;
-}
+// Access a property using the dot notation and something called chaining
+console.log(elephant.name);
 
-console.log(cost);
+// Access a property using the dot notation and something called chaining
+console.log(elephant.age);
 
-let age = 19;
-let stateOrProvince = "Ontario";
+// Declare a const and set it to 100
+const boilingPoint = 100;
+// Try to assign the const a new value
 
-if (stateOrProvince === "California") {
-  if (age >= 21) {
-    console.log("Hello Vegas");
-  } else {
-    console.log("Sorry");
-  }
-} else if (stateOrProvince === "Ontario") {
-  if (age >= 19) {
-    console.log("Hello Toronto");
-  } else {
-    console.log("Sorry");
-  }
-}
+// Add both of the strings and display using the console log
+console.log("The boiling point is:", boilingPoint);
 
-let isLoggedIn = false;
-let isLocalUser = true;
+console.clear();
 
-if (isLoggedIn && isLocalUser) {
-  console.log("The user is both local AND logged in");
-} else {
-  console.log("The user is either not local or not logged in, or not both");
-}
+// Declare a const called price and set it
+const price = 4.99;
 
-let isLoggedInG = false;
+// Declare a const called quantity and set it
+const quantity = 7;
 
-if (!isLoggedInG) {
-  console.log("The user is not logged in");
-}
+// Console log will display - You can buy 7 elephants for $34.93
+console.log(`You can buy ${quantity} elephants for $${price * quantity}`);
 
-const mystery = "Sfffffffff";
+// Note the two dollar signs - the first is just the regular dollar sign
+//  and the second one activates the expression within the curly braces
 
-if (mystery[0] === "S" && mystery.length > 4 && mystery.indexOf("A") !== -1) {
-  console.log("YOU GOT IT!");
-} else {
-  console.log("Keep trying, you can do it!");
-}
-/*
-function canVisitVegas(age) {
-  let allowed = null;
+console.clear();
 
-  if (age >= 21) {
-    allowed = true;
-  } else {
-    allowed = false;
-  }
-  return allowed;
-}
-*/
+// Declare some attributes
+let areaCode = 613;
+let telephonePrefix = 825;
+let lineNumber = 6849;
 
-// console.log(canVisitVegas(25)); // Error!
-
-let ageFF = 21;
-
-function canVisitVegas() {
-  let allowed = null;
-  if (ageFF >= 21) {
-    allowed = true;
-  } else {
-    allowed = false;
-  }
-  return allowed;
-}
-
-console.log(canVisitVegas()); // Error!
-
-let listOfAges = [12, 34, 28, 21, 44, 90, 18, 20, 25];
-
-function canConsumeAlcoholInVegas(age) {
-  if (age >= 21) {
-    return true;
-  } else {
-    return false;
-  }
-}
-
-for (let i = 0; i <= listOfAges.length; i++) {
-  if (canConsumeAlcoholInVegas(listOfAges[i])) {
-    console.log(`Age at Index ${i} is of age`);
-  }
-}
-
-function displayTodoItem(id, title, done) {
-  console.log(
-    `ToDo ID: ${id}, ToDo Title: ${title}, Todo Done Status: ${done}`
-  );
-}
-
-displayTodoItem(1, "Buy Groceries");
-displayTodoItem(2, "Order Uber Eats");
-displayTodoItem(3, "Call Mom");
-displayTodoItem(4, "File taxes");
-
-function addNumbers(a, b) {
-  return a + b;
-}
-
-let result = addNumbers(3, 4);
-
-console.log(result);
+// Use a string template literal
+// to display: "My phone number is (613) 825-6849"
+console.log(
+  `My phone number is (${areaCode}) ${telephonePrefix}-${lineNumber}`
+);

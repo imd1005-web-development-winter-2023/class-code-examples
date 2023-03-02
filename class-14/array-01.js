@@ -194,3 +194,7 @@ if (mystery[0] === "S" && mystery.length > 4 && mystery.indexOf("A") !== -1) {
 } else {
   console.log("Keep trying, you can do it!");
 }
+
+console.clear();
+
+console.log("Hello world");
