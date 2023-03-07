@@ -1,0 +1,222 @@
+/*
+  CSS FILES
+*/
+
+/*
+ VARIABLES
+*/
+:root {
+  /* Core colours */
+  /*  https://coolors.co/palette/bee9e8-62b6cb-1b4965-cae9ff-5fa8d3 */
+  --colour-jagged-ice: #bee9e8;
+  --colour-fountain-blue: #62b6cb;
+  --colour-dark-grey-blue: #183d54;
+  --colour-darker-grey-blue: #0f2634;
+  --colour-french-pass: #cae9ff;
+  --colour-blue-koi: #5fa8d3;
+
+  /* Header configuration */
+  --header-heading-colour: var(--colour-dark-grey-blue);
+  --header-background-colour: var(--colour-dark-grey-blue);
+
+  /* Body configuration */
+  --body-default-colour: var(--colour-darker-grey-blue);
+  --body-background-colour: var(--colour-blue-koi);
+}
+
+/*
+ SELECTING TARGETS
+*/
+
+.selecting-targets-1 {
+  margin-top: 50px;
+}
+
+.selecting-targets-1 ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 3rem;
+  column-gap: 1rem;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.selecting-targets-1 ul li {
+  padding: 20px 10px 20px 10px;
+  text-align: center;
+  border-radius: 20px;
+  border: 5px solid var(--colour-dark-grey-blue);
+  background-color: var(--colour-french-pass);
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/*
+ MANIPULATING TARGETS
+*/
+
+ul#manipulating-targets-1,
+ul#manipulating-targets-2 {
+  list-style-type: none;
+  margin: 20px 0px 0px 0px;
+  padding: 0px;
+}
+
+ul#manipulating-targets-1 li,
+ul#manipulating-targets-2 li {
+  margin: 10px 0px;
+  padding: 20px 10px 20px 10px;
+  background-color: var(--colour-french-pass);
+  border-radius: 10px;
+
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+ul#manipulating-targets-3 {
+  list-style-type: none;
+  margin: 20px 0px 0px 0px;
+  padding: 0px;
+}
+
+ul#manipulating-targets-3 li {
+  margin: 10px 0px;
+  padding: 20px 10px 20px 10px;
+  background-color: var(--colour-french-pass);
+  border-radius: 10px;
+
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+ul#manipulating-targets-3 li {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  align-items: center;
+}
+
+ul#manipulating-targets-3 li h4 {
+  background-color: var(--colour-dark-grey-blue);
+  padding: 60px 0px 60px 0px;
+  color: #fff;
+}
+
+/*
+ CHANGING CLASSES
+*/
+
+.mc-1 {
+  margin-top: 50px;
+}
+
+.mc-1 ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 3rem;
+  column-gap: 1rem;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.mc-1 ul li {
+  padding: 20px 10px 20px 10px;
+  text-align: center;
+  border-radius: 20px;
+  border: 5px solid var(--colour-dark-grey-blue);
+  background-color: var(--colour-french-pass);
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.mc-1 ul li.done {
+  color: white;
+  background-color: var(--colour-darker-grey-blue);
+  border-color: var(--colour-dark-grey-blue);
+}
+
+/*
+ UTILITIES
+*/
+.container {
+  max-width: 500px;
+  margin: 0px auto 0px auto;
+  padding: 0 1rem 0 1rem;
+}
+
+/*
+ MAIN
+*/
+
+main h2 {
+  color: var(--colour-darker-grey-blue);
+  font-size: 1.8rem;
+}
+
+main > section {
+  border-bottom: 20px solid white;
+}
+
+section {
+  padding: 100px 0px 100px 0px;
+}
+
+/*
+ HEADER
+*/
+header {
+  background-color: var(--header-background-colour);
+  padding: 50px 0px 50px 0px;
+}
+
+.header-flex {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+/* .header-flex > * {
+  flex-basis: 100%;
+
+  width: 100%;
+  border: 1px solid red;
+} */
+
+.header-flex .logo {
+  width: 150px;
+}
+
+header h2 {
+  padding: 2rem;
+  color: #eaf4f4;
+  text-align: center;
+  font-size: 2rem;
+}
+
+/*
+ BODY
+*/
+
+body {
+  color: var(--body-default-colour);
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--body-background-colour);
+}
+
+/*
+ SCREEN READER UTILITY
+*/
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
