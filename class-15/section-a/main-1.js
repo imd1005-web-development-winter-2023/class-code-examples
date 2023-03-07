@@ -115,8 +115,61 @@ i13ListItem.classList.add("done");
 
 const i14ListItem = document.getElementById("mc-1-list-item-3");
 
-console.log(i14ListItem);
+// console.log(i14ListItem);
 
 i14ListItem.classList.remove("done");
 
-console.log(i14ListItem);
+// console.log(i14ListItem);
+
+//
+// COMPLICATED LIST ITEMS
+//
+
+const complicatedList = document.getElementById("manipulating-targets-3");
+
+// Long way
+const myH4 = document.createElement("h4");
+const myP = document.createElement("p");
+const myLink = document.createElement("a");
+
+myH4.textContent = "My heading whatevs";
+myP.textContent =
+  "Lorem ipsum dolor sit amet consectetur adipisicing elit.Blanditiis,tempore";
+myLink.textContent = "Hello Link";
+
+myLink.setAttribute("href", "#");
+
+const myListItem = document.createElement("li");
+
+myListItem.appendChild(myH4);
+myListItem.appendChild(myP);
+myListItem.appendChild(myLink);
+
+complicatedList.appendChild(myListItem);
+
+// Shorter way
+const myComplicatedListItem = document.createElement("li");
+
+/*
+
+<h4>Lorem, ipsum dolor.</h4>
+<p>
+  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+  Blanditiis, tempore.
+</p>
+<a href="#">Hello world</a>
+
+*/
+
+const nameOfTodo = "My todo";
+
+myComplicatedListItem.innerHTML = `
+<h4>${nameOfTodo}</h4>
+<p>
+  Literally Lorem ipsum dolor sit amet consectetur adipisicing elit.
+  Blanditiis, tempore.
+</p>
+<a href="#">Hello world</a>
+`;
+
+complicatedList.appendChild(myComplicatedListItem);
