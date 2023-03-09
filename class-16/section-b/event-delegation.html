@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+  <head>
+    <!-- Set the page title -->
+    <title>Class 16 - Events</title>
+
+    <!-- Set the charset we're using to UTF-8 -->
+    <meta charset="UTF-8" />
+
+    <!-- Set the screens default zoom / scale to 1 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Specifies the document mode for Internet Explorer -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- Set the Favicon  -->
+    <link rel="icon" href="./images/favicon/rocket.svg" type="image/svg+xml" />
+
+    <!-- We are using a CSS Reset file to standardize browser default css -->
+    <link rel="stylesheet" href="./reset.css" />
+
+    <!-- This is where all of our awesome CSS code goes -->
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main>
+      <div class="container heading">
+        <h1>Events and delegating</h1>
+      </div>
+
+      <section>
+        <div class="container">
+          <h2>When the parent handles the child's events</h2>
+
+          <ul id="list-2" class="list-secondary">
+            <li><button data-todo="1" class="btn-primary">1</button></li>
+            <li><button data-todo="2" class="btn-primary">2</button></li>
+            <li><button data-todo="3" class="btn-primary">3</button></li>
+            <li><button class="btn-primary">4</button></li>
+            <li><button class="btn-primary">5</button></li>
+            <li><button class="btn-primary">6</button></li>
+            <li><button class="btn-primary">7</button></li>
+            <li><button class="btn-primary">8</button></li>
+            <li><button class="btn-primary">9</button></li>
+            <li><button class="btn-primary">10</button></li>
+            <li><button class="btn-primary">11</button></li>
+            <li><button class="btn-primary">12</button></li>
+          </ul>
+
+          <p>You clicked: <span id="message-1">(nothing yet)</span></p>
+        </div>
+      </section>
+    </main>
+    <script src="./main.js"></script>
+  </body>
+</html>
