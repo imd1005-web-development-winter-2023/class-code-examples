@@ -70,27 +70,27 @@ const greet3 = (message = "default") => {
 // Create a new li
 // Add the list item into the parent ul
 
-// Variables
-const form = document.querySelector("#form-1");
-const product = document.querySelector("#form-1-product-name");
-const quantity = document.querySelector("#form-1-product-qty");
-const list = document.querySelector("#list-1");
+// // Variables
+// const form = document.querySelector("#form-1");
+// const product = document.querySelector("#form-1-product-name");
+// const quantity = document.querySelector("#form-1-product-qty");
+// const list = document.querySelector("#list-1");
 
-// Adding event handler
-form.addEventListener("submit", addToList);
+// // Adding event handler
+// form.addEventListener("submit", addToList);
 
-// Function to add something to my list
-function addToList(event) {
-  event.preventDefault();
+// // Function to add something to my list
+// function addToList(event) {
+//   event.preventDefault();
 
-  console.log(product.value, quantity.value);
+//   console.log(product.value, quantity.value);
 
-  const tempListItem = document.createElement("li");
+//   const tempListItem = document.createElement("li");
 
-  tempListItem.textContent = `${product.value} (${quantity.value})`;
+//   tempListItem.textContent = `${product.value} (${quantity.value})`;
 
-  list.appendChild(tempListItem);
-}
+//   list.appendChild(tempListItem);
+// }
 
 //
 //
@@ -101,6 +101,25 @@ function addToList(event) {
 // Cache all of the four bubble elements and the button
 // Add click listeners to all of them
 // Show how stopPropogation() stops the event from bubbling
+
+// const myBubble1 = document.querySelector(".bubble-1");
+// const myBubble2 = document.querySelector(".bubble-2");
+// const myBubble3 = document.querySelector(".bubble-3");
+
+// const myBubble4 = document.querySelector(".bubble-4");
+
+// const myButton = document.querySelector("#btn-6");
+
+// function shout(event) {
+//   console.log("Hello from", event.currentTarget);
+//   event.stopPropagation();
+// }
+
+// myButton.addEventListener("click", shout);
+// myBubble4.addEventListener("click", shout);
+// myBubble3.addEventListener("click", shout);
+// myBubble2.addEventListener("click", shout);
+// myBubble1.addEventListener("click", shout);
 
 //
 //
@@ -113,3 +132,16 @@ function addToList(event) {
 // Cache the dom objects #list-2 #message-1
 // Create the list hander
 // Add the event listeners
+
+const list = document.querySelector("#list-2");
+const message = document.querySelector("#message-1");
+
+function listClicked(event) {
+  const myIndex = event.target.dataset.grogu;
+
+  console.log("Hello world:", myIndex);
+
+  message.textContent = myIndex;
+}
+
+list.addEventListener("click", listClicked);
