@@ -1,3 +1,7 @@
+function greet(message = "No Message") {
+  console.log("Message", message);
+}
+
 //
 //
 // events-add-event-listner
