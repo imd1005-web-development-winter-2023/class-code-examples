@@ -1,0 +1,12 @@
+[
+  {
+    "name": "John",
+    "age": 43,
+    "isAlive": true
+  },
+  {
+    "name": "Matilda",
+    "age": 23,
+    "isAlive": true
+  }
+]

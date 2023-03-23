@@ -122,7 +122,7 @@
 const list = document.querySelector("#list-2");
 const message = document.querySelector("#message-1");
 
-list.addEventListener("click", updateMessage);
+// list.addEventListener("click", updateMessage);
 
 function updateMessage(event) {
   if (event.target.nodeName !== "BUTTON") {
