@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+  <head>
+    <!-- Set the page title -->
+    <title>Class 21 - Vue.JS Product Page</title>
+
+    <!-- Set the charset we're using to UTF-8 -->
+    <meta charset="UTF-8" />
+
+    <!-- Set the screens default zoom / scale to 1 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Specifies the document mode for Internet Explorer -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- Set the Favicon  -->
+    <link rel="icon" href="./images/favicon/rocket.svg" type="image/svg+xml" />
+
+    <!-- We are using a CSS Reset file to standardize browser default css -->
+    <link rel="stylesheet" href="./reset.css" />
+
+    <!-- This is where all of our awesome CSS code goes -->
+    <link rel="stylesheet" href="./styles.css" />
+
+    <!-- This is a development version of Vue.js! -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+    <!--
+      Credit Photo by <a href="https://unsplash.com/@lore_schodts?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Lore Schodts</a> on <a href="https://unsplash.com/photos/8BNGxSAQd6M?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+    -->
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <div class="nav-bar">
+          <img src="./images/logo.png" alt="Donut Logo" />
+          <h2>donuts</h2>
+          <div class="cart">
+            <img src="./images/bag.png" alt="Donut Logo" />
+            <p><span class="sr-only">Number of items in cart: </span>0</p>
+          </div>
+        </div>
+      </header>
+      <main>
+        <h1 class="sr-only">Donuts available to buy</h1>
+
+        <div class="product">
+          <img class="image" src="images/donut-3.png" alt="" />
+          <div class="content">
+            <h2>Delicious Donuts</h2>
+
+            <section>
+              <h3 class="sr-only">Product description</h3>
+
+              <!-- In Stock
+              <p class="badge in-stock">In stock</p>
+              <p class="badge out-stock">Out of stock</p>
+              -->
+
+              <p>
+                Our delicious donuts are made with the finest ingredients and
+                come in three irresistible flavors: cotton candy, lemon, and
+                strawberry. Each donut is soft, fluffy, and bursting with
+                flavor, making it the perfect treat for any occasion.
+              </p>
+
+              <ul>
+                <li>
+                  Each donut is freshly baked and handcrafted by our expert
+                  bakers.
+                </li>
+                <li>Available in boxes of 6 or 12 donuts.</li>
+                <li>Comes with a satisfaction guarantee.</li>
+              </ul>
+            </section>
+
+            <section>
+              <h3 class="sr-only">Product variants</h3>
+
+              <ul class="variants-selector">
+                <li>
+                  <button>
+                    <img src="./images/variant-1.png" alt="" />
+                    <span class="sr-only"> Cotton Candy</span>
+                  </button>
+                </li>
+                <li>
+                  <button>
+                    <img src="./images/variant-2.png" alt="" />
+                    <span class="sr-only">Lemon</span>
+                  </button>
+                </li>
+                <li>
+                  <button>
+                    <img src="./images/variant-3.png" alt="" />
+                    <span class="sr-only">Strawberry</span>
+                  </button>
+                </li>
+              </ul>
+            </section>
+
+            <section>
+              <h3 class="sr-only">Product price</h3>
+              <div class="price-section">
+                <p class="price">$55.39</p>
+                <button class="btn-primary">Add to cart</button>
+              </div>
+            </section>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
