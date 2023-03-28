@@ -80,7 +80,8 @@ header .nav-bar .cart img + * {
 
 .product {
   max-width: 500px;
-  margin: 50px auto 0px auto;
+  margin: 50px auto 50px auto;
+  border: 1px solid var(--colour-pink);
   transform: rotate(0deg);
   border-radius: 25px;
   background-color: var(--colour-white);
@@ -158,6 +159,10 @@ header .nav-bar .cart img + * {
 /*
  MAIN
 */
+
+main {
+  border-bottom: 1px solid var(--colour-blue-light);
+}
 
 /*
  UTILITIES
