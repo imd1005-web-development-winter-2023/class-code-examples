@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+  <head>
+    <!-- Set the page title -->
+    <title>Class 21 - Vue.JS Product Page</title>
+
+    <!-- Set the charset we're using to UTF-8 -->
+    <meta charset="UTF-8" />
+
+    <!-- Set the screens default zoom / scale to 1 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Specifies the document mode for Internet Explorer -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- Set the Favicon  -->
+    <link rel="icon" href="./images/favicon/rocket.svg" type="image/svg+xml" />
+
+    <!-- We are using a CSS Reset file to standardize browser default css -->
+    <link rel="stylesheet" href="./reset.css" />
+
+    <!-- This is where all of our awesome CSS code goes -->
+    <link rel="stylesheet" href="./styles.css" />
+
+    <!-- We can use the Vue.JS library directly from a Content Delivery Network (CDN)-->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+    <script src="https://unpkg.com/vue-router@4"></script>
+  </head>
+  <body>
+    <!-- Vue.JS app boundary -->
+    <div id="app">
+      <app-header></app-header>
+      <router-link to="/">Go to Home</router-link>
+      <router-link to="/about">Go to About</router-link>
+
+      <router-view></router-view>
+
+      <app-footer></app-footer>
+    </div>
+
+    <!-- Import and mount our Vue.JS App -->
+    <script src="./main.js"></script>
+    <script src="./components/app-header.js"></script>
+    <script src="./components/app-footer.js"></script>
+    <script src="./components/my-main.js"></script>
+    <script src="./components/my-about.js"></script>
+
+    <script>
+      // 1. Define route components.
+      // These can be imported from other files
+      // const Home = { template: "<div>Home</div>" };
+      // const About = { template: "<div>About</div>" };
+
+      // 2. Define some routes
+      // Each route should map to a component.
+      // We'll talk about nested routes later.
+      const routes = [
+        { path: "/", component: Main },
+        { path: "/about", component: About },
+      ];
+
+      // 3. Create the router instance and pass the `routes` option
+      // You can pass in additional options here, but let's
+      // keep it simple for now.
+      const router = VueRouter.createRouter({
+        // 4. Provide the history implementation to use. We are using the hash history for simplicity here.
+        history: VueRouter.createWebHashHistory(),
+        routes, // short for `routes: routes`
+      });
+
+      // 5. Create and mount the root instance.
+      // const app = Vue.createApp({});
+      // Make sure to _use_ the router instance to make the
+      // whole app router-aware.
+      app.use(router);
+
+      // Finally, we mount our app to our web page
+      app.mount("#app");
+    </script>
+  </body>
+</html>

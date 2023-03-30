@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+  <head>
+    <!-- Set the page title -->
+    <title>Class 21 - Vue.JS Product Page</title>
+
+    <!-- Set the charset we're using to UTF-8 -->
+    <meta charset="UTF-8" />
+
+    <!-- Set the screens default zoom / scale to 1 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Specifies the document mode for Internet Explorer -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- Set the Favicon  -->
+    <link rel="icon" href="./images/favicon/rocket.svg" type="image/svg+xml" />
+
+    <!-- We are using a CSS Reset file to standardize browser default css -->
+    <link rel="stylesheet" href="./reset.css" />
+
+    <!-- This is where all of our awesome CSS code goes -->
+    <link rel="stylesheet" href="./styles.css" />
+
+    <!-- We can use the Vue.JS library directly from a Content Delivery Network (CDN)-->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  </head>
+  <body>
+    <!-- Vue.JS app boundary -->
+    <div id="app">
+      <app-header v-bind:cart="cart"></app-header>
+      <product-card @add-to-cart="updateCart"></product-card>
+      <product-card :is-premium="true" @add-to-cart="updateCart"></product-card>
+      <product-card @add-to-cart="updateCart"></product-card>
+      <product-card @add-to-cart="updateCart"></product-card>
+    </div>
+
+    <!-- Import and mount our Vue.JS App -->
+    <script src="./main.js"></script>
+    <script src="./components/app-header.js"></script>
+    <script src="./components/product-card.js"></script>
+
+    <script>
+      // Finally, we mount our app to our web page
+      app.mount("#app");
+    </script>
+  </body>
+</html>
