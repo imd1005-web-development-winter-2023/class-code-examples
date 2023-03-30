@@ -1,4 +1,4 @@
-[https://prod.liveshare.vsengsaas.visualstudio.com/join?10C8232E474915F5D9CF686F93C288B30076](https://prod.liveshare.vsengsaas.visualstudio.com/join?10C8232E474915F5D9CF686F93C288B30076)
+https://prod.liveshare.vsengsaas.visualstudio.com/join?541BA5648CE1A981D4F81B9ABB8223881944
 
 # Class code examples
 
