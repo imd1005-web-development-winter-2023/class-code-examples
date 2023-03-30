@@ -21,8 +21,19 @@
 
     <!-- This is where all of our awesome CSS code goes -->
     <link rel="stylesheet" href="./styles.css" />
+
+    <!-- We can use the Vue.JS library directly from a Content Delivery Network (CDN)-->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
   </head>
   <body>
-    <h1>Hello world</h1>
+    <!-- Vue.JS app boundary -->
+    <div id="app">
+      <main>
+        <h1>{{ message }}</h1>
+      </main>
+    </div>
+
+    <!-- Import and mount our Vue.JS App -->
+    <script src="./main.js"></script>
   </body>
 </html>

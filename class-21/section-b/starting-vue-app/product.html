@@ -37,7 +37,9 @@
           <h2>donuts</h2>
           <div class="cart">
             <img src="./images/bag.png" alt="Donut Logo" />
-            <p><span class="sr-only">Number of items in cart: </span>0</p>
+            <p>
+              <span class="sr-only">Number of items in cart: </span>{{ cart }}
+            </p>
           </div>
         </div>
       </header>
@@ -45,32 +47,21 @@
         <h1 class="sr-only">Donuts available to buy</h1>
 
         <div class="product">
-          <img class="image" src="images/donut-3.png" alt="" />
+          <img v-bind:src="imageSelectedSrc" class="image" alt="" />
           <div class="content">
-            <h2>Delicious Donuts</h2>
+            <h2>{{ productTitle }}</h2>
 
             <section>
               <h3 class="sr-only">Product description</h3>
 
-              <!-- In Stock
-              <p class="badge in-stock">In stock</p>
-              <p class="badge out-stock">Out of stock</p>
-              -->
+              <!-- In Stock -->
+              <p v-if="isInStock" class="badge in-stock">In stock</p>
+              <p v-else class="badge out-stock">Out of stock</p>
 
-              <p>
-                Our delicious donuts are made with the finest ingredients and
-                come in three irresistible flavors: cotton candy, lemon, and
-                strawberry. Each donut is soft, fluffy, and bursting with
-                flavor, making it the perfect treat for any occasion.
-              </p>
+              <p>{{ productDescription}}</p>
 
               <ul>
-                <li>
-                  Each donut is freshly baked and handcrafted by our expert
-                  bakers.
-                </li>
-                <li>Available in boxes of 6 or 12 donuts.</li>
-                <li>Comes with a satisfaction guarantee.</li>
+                <li v-for="details in productDetails">{{ details }}</li>
               </ul>
             </section>
 
@@ -78,22 +69,10 @@
               <h3 class="sr-only">Product variants</h3>
 
               <ul class="variants-selector">
-                <li>
-                  <button>
-                    <img src="./images/variant-1.png" alt="" />
-                    <span class="sr-only"> Cotton Candy</span>
-                  </button>
-                </li>
-                <li>
-                  <button>
-                    <img src="./images/variant-2.png" alt="" />
-                    <span class="sr-only">Lemon</span>
-                  </button>
-                </li>
-                <li>
-                  <button>
-                    <img src="./images/variant-3.png" alt="" />
-                    <span class="sr-only">Strawberry</span>
+                <li v-for="variant , index in product.variants">
+                  <button v-on:click="updateSelectedVariantIndex(index)">
+                    <img v-bind:src="variant.selectorImageSrc" alt="" />
+                    <span class="sr-only"> {{ variant.name }}</span>
                   </button>
                 </li>
               </ul>
@@ -102,8 +81,15 @@
             <section>
               <h3 class="sr-only">Product price</h3>
               <div class="price-section">
-                <p class="price">$55.39</p>
-                <button class="btn-primary">Add to cart</button>
+                <p class="price">${{ price }}</p>
+
+                <button
+                  v-bind:disabled="!isInStock"
+                  v-on:click="addToCard"
+                  class="btn-primary"
+                >
+                  Add to cart
+                </button>
               </div>
             </section>
           </div>
