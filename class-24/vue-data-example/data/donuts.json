@@ -1,0 +1,24 @@
+[
+  {
+    "title" : "Cotton candy",
+    "imageSrc" : "./images/donut-1.png",
+    "description":
+    "Our delicious donuts are made with the finest ingredients and come in three irresistible flavors: cotton candy, lemon, and strawberry. Each donut is soft, fluffy, and bursting with flavor, making it the perfect treat for any occasion.",
+    "price": 22,
+    "stock": 10
+  },
+  {
+    "title" : "Lemon",
+    "imageSrc" : "./images/donut-2.png",
+    "description": "Savor the zesty and refreshing taste of our lemon donut - a delicious pastry that's sure to brighten up your day! Made with the finest ingredients, this donut is infused with the tangy and citrusy flavor of fresh lemons, and is delicately crafted to achieve a light and fluffy texture. Topped with a sweet and tangy lemon glaze and finished with a sprinkle of lemon zest, this donut is a treat for both the eyes and the taste buds.",
+    "price": 30,
+    "stock": 10
+  },
+  {
+    "title" : "Strawberry",
+    "imageSrc" : "./images/donut-3.png",
+    "description": "Indulge in the delightful taste of our strawberry donut - a soft and pillowy pastry that's infused with the fruity flavor of ripe strawberries. Topped with a luscious strawberry glaze and sprinkled with chunks of fresh, juicy strawberries, this donut is the perfect treat for those with a sweet tooth.",
+    "price": 15,
+    "stock": 0
+  }
+]

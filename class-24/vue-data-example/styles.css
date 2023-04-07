@@ -1,0 +1,250 @@
+/*
+  CSS FILE
+*/
+
+/*
+ VARIABLES
+*/
+:root {
+  /*
+    Core colours
+    https://coolors.co/palette/f4f1de-e07a5f-3d405b-81b29a-f2cc8f
+  */
+
+  --colour-purple-light: #cdb4db;
+  --colour-pink-light: #ffc8dd;
+  --colour-pink: #ffafcc;
+  --colour-blue-light: #bde0fe;
+  --colour-blue: #a2d2ff;
+  --colour-blue-dark: #314354;
+  --colour-beige: #f8faf9;
+  --colour-white: #fcfffe;
+
+  /* Header configuration */
+  --header-heading-colour: var(--colour-blue-dark);
+  --header-background-colour: var(--colour-blue-light);
+
+  /* Body configuration */
+  --body-default-colour: var(--colour-dark-purple);
+  --body-background-colour: var(--colour-pink-light);
+}
+
+/*
+ HEADER
+*/
+header {
+  padding: 2rem;
+  background-color: var(--header-background-colour);
+  color: var(--header-heading-colour);
+}
+
+header .nav-bar {
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+header .nav-bar img {
+  height: 3rem;
+  width: auto;
+  margin-right: 1rem;
+}
+
+header .nav-bar h2 {
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+header .nav-bar .cart {
+  margin-left: auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  font-weight: 800;
+}
+
+header .nav-bar .cart img + * {
+  margin: 0px;
+  padding: 1px 8px;
+  margin-left: -20px;
+  border-radius: 100px;
+  color: white;
+  background-color: var(--colour-blue-dark);
+}
+
+/*
+ PRODUCT CARD
+*/
+
+.products {
+  list-style-type: none;
+  margin: 0px auto;
+  padding: 5rem 1rem;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media screen and (min-width: 600px) {
+  .products {
+    max-width: 900px;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.product {
+  /* margin: 10px auto 50px auto; */
+  border: 1px solid var(--colour-pink);
+  transform: rotate(0deg);
+  border-radius: 25px;
+  background-color: var(--colour-white);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.product h2 {
+  font-size: 2rem;
+}
+
+.product .image {
+  margin: 0 auto;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  /* border: 5px solid var(--colour-blue); */
+}
+
+.product .content {
+  padding: 2rem 2rem 3rem 2rem;
+}
+
+.product .variants-selector {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+}
+
+.product .variants-selector li button {
+  background-color: transparent;
+  border: none;
+  transition: all 500ms;
+}
+
+.product .variants-selector li button:hover {
+  transform: scale(1.1);
+}
+
+.product .variants-selector li button img {
+  height: 90px;
+}
+
+.product .price-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product .price {
+  font-size: 3.5rem;
+  font-weight: 100;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.product .badge {
+  margin: 1rem 0rem;
+  display: inline-flex;
+  font-size: 0.9rem;
+  padding: 3px 10px;
+  border-radius: 5px;
+}
+
+.product .badge.in-stock {
+  background-color: var(--colour-blue);
+}
+
+.product .badge.out-stock {
+  background-color: var(--colour-pink);
+}
+
+.product p {
+  margin-bottom: 1.4rem;
+}
+/*
+ MAIN
+*/
+
+main {
+  border-bottom: 1px solid var(--colour-blue-light);
+}
+
+/*
+ UTILITIES
+*/
+
+/*
+  BUTTONS
+*/
+
+.btn-primary {
+  background-color: #ea4c89;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  font-size: 1.1rem;
+  font-weight: 500;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 1.2rem 1.2rem;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #f082ac;
+}
+
+.btn-primary:disabled {
+  background-color: #f082ac;
+  cursor: not-allowed;
+}
+
+/*
+ BODY
+*/
+
+body {
+  color: var(--body-default-colour);
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--body-background-colour);
+}
+
+/*
+ SCREEN READER UTILITY
+*/
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
