@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+  <head>
+    <!-- Set the page title -->
+    <title>Class 21 - Vue.JS Product Page</title>
+
+    <!-- Set the charset we're using to UTF-8 -->
+    <meta charset="UTF-8" />
+
+    <!-- Set the screens default zoom / scale to 1 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Specifies the document mode for Internet Explorer -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- Set the Favicon  -->
+    <link rel="icon" href="./images/favicon/rocket.svg" type="image/svg+xml" />
+
+    <!-- We are using a CSS Reset file to standardize browser default css -->
+    <link rel="stylesheet" href="./reset.css" />
+
+    <!-- This is where all of our awesome CSS code goes -->
+    <link rel="stylesheet" href="./styles.css" />
+
+    <!-- This is a development version of Vue.js! -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+    <!--
+      Credit Photo by <a href="https://unsplash.com/@lore_schodts?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Lore Schodts</a> on <a href="https://unsplash.com/photos/8BNGxSAQd6M?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+    -->
+  </head>
+  <body>
+    <div id="app">
+      <div class="container">
+        <header>
+          <div class="nav-bar">
+            <svg
+              class="logo"
+              version="1.1"
+              viewBox="0 0 1200 1200"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="m151.91 193.91h896.18v477.6h-482.59c-10.09-57.219-47.621-105.68-99.441-130.17 9.9648-14.883 15.465-32.543 15.465-50.938 0-50.598-41.047-91.629-91.629-91.629-50.598 0-91.629 41.031-91.629 91.629 0 18.398 5.5 36.059 15.465 50.938-51.816 24.477-89.348 72.949-99.441 130.17h-62.375v-477.6zm274.59 365.63c59.441 15.164 104.46 66.402 110.38 129h-293.98c5.9258-62.605 50.938-113.84 110.38-129v-20.41c-14.781-11.125-24.352-28.812-24.352-48.727 0-33.676 27.297-60.961 60.961-60.961 33.66 0 60.961 27.285 60.961 60.961 0 19.914-9.5664 37.617-24.352 48.727zm670.47 264.52c50.273 0 91.035 40.762 91.035 91.035 0 50.285-40.762 91.035-91.035 91.035-50.285 0-91.035-40.75-91.035-91.035 0-50.273 40.75-91.035 91.035-91.035zm-248.5 0c50.285 0 91.035 40.762 91.035 91.035 0 50.285-40.75 91.035-91.035 91.035-50.273 0-91.035-40.75-91.035-91.035 0-50.273 40.762-91.035 91.035-91.035zm-248.49 0c50.285 0 91.051 40.762 91.051 91.035 0 50.285-40.762 91.035-91.051 91.035-50.273 0-91.035-40.75-91.035-91.035 0-50.273 40.762-91.035 91.035-91.035zm-248.47 0c50.273 0 91.035 40.762 91.035 91.035 0 50.285-40.762 91.035-91.035 91.035-50.285 0-91.035-40.75-91.035-91.035 0-50.273 40.75-91.035 91.035-91.035zm-248.49 0c50.285 0 91.035 40.762 91.035 91.035 0 50.285-40.75 91.035-91.035 91.035-50.285 0-91.035-40.75-91.035-91.035 0-50.273 40.75-91.035 91.035-91.035zm869.7-92.453c41.371 0 76.297 27.594 87.363 65.395-49.863 15.562-86.176 61.824-86.797 116.66l-0.56641 0.015625-0.58203-0.015625c-0.625-54.824-36.938-101.1-86.797-116.66 11.07-37.801 45.992-65.395 87.379-65.395zm-248.49 0c41.371 0 76.297 27.594 87.363 65.395-49.863 15.562-86.176 61.824-86.797 116.66l-0.56641 0.015625-0.58203-0.015625c-0.625-54.824-36.938-101.1-86.797-116.66 11.07-37.801 46.008-65.395 87.379-65.395zm-248.49 0c41.371 0 76.297 27.594 87.363 65.395-49.863 15.562-86.176 61.824-86.797 116.66l-0.56641 0.015625-0.56641-0.015625c-0.63672-54.824-36.949-101.1-86.812-116.66 11.082-37.801 46.008-65.395 87.379-65.395zm-248.49 0c41.387 0 76.297 27.594 87.379 65.395-49.875 15.562-86.188 61.824-86.812 116.66l-0.56641 0.015625-0.56641-0.015625c-0.625-54.824-36.949-101.1-86.797-116.66 11.07-37.801 45.992-65.395 87.363-65.395z"
+                fill-rule="evenodd"
+              />
+            </svg>
+
+            <h2>IMD1005Conf</h2>
+          </div>
+        </header>
+        <main>
+          <h1>Agenda</h1>
+
+          <section>
+            <h2>Schedule</h2>
+
+            <ul></ul>
+          </section>
+        </main>
+      </div>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>

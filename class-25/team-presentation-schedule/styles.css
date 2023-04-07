@@ -1,0 +1,117 @@
+/*
+  CSS FILE
+*/
+
+/*
+ VARIABLES
+*/
+:root {
+  /*
+    Core colours
+    https://coolors.co/palette/f4f1de-e07a5f-3d405b-81b29a-f2cc8f
+  */
+
+  --colour-purple-darkest: #1a001c;
+
+  --colour-purple: #6e1870;
+
+  --colour-purple-light: #cdb4db;
+  --colour-pink-light: #ffc8dd;
+  --colour-pink: #ffafcc;
+  --colour-blue-light: #bde0fe;
+  --colour-blue: #a2d2ff;
+  --colour-blue-dark: #314354;
+  --colour-beige: #f8faf9;
+  --colour-white: #fcfffe;
+
+  /* Header configuration */
+  --header-heading-colour: var(--colour-purple-light);
+  --header-background-colour: var(--colour-purple-darkest);
+
+  /* Body configuration */
+  --body-default-colour: var(--colour-dark-purple);
+  --body-background-colour: var(--colour-purple-darkest);
+}
+
+/*
+ CONTAINER
+*/
+.container {
+  max-width: 660px;
+  width: 100%;
+  margin: 0px auto;
+  padding: 1rem;
+
+  border-left: 1px solid red;
+  border-right: 1px solid red;
+}
+
+@media screen and (min-width: 600px) {
+  .container {
+    padding: 2rem;
+  }
+}
+
+/*
+ HEADER
+*/
+header {
+  background-color: var(--header-background-colour);
+  color: var(--header-heading-colour);
+}
+
+header .nav-bar {
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+header .nav-bar .logo {
+  height: 3rem;
+  width: auto;
+  margin-right: 1rem;
+  fill: var(--header-heading-colour);
+}
+
+header .nav-bar h2 {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+@media screen and (min-width: 600px) {
+  /* header {
+    /* padding: 2rem;
+  } */
+
+  header .nav-bar h2 {
+    font-size: 1.8rem;
+  }
+}
+
+/*
+ BODY
+*/
+
+body {
+  color: var(--body-default-colour);
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--body-background-colour);
+}
+
+/*
+ SCREEN READER UTILITY
+*/
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
