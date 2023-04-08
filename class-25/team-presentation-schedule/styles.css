@@ -11,11 +11,18 @@
     https://coolors.co/palette/f4f1de-e07a5f-3d405b-81b29a-f2cc8f
   */
 
-  --colour-purple-darkest: #1a001c;
+  --colour-purple-900: #1a001c;
+  --colour-purple-800: #250327;
+  --colour-purple-700: #2f0631;
+  --colour-purple-600: #3a093c;
+  --colour-purple-500: #440c46;
+  --colour-purple-400: #59125b;
+  --colour-purple-300: #6e1870;
+  --colour-purple-200: #902092;
 
-  --colour-purple: #6e1870;
+  --colour-purple-light: #d230d5;
 
-  --colour-purple-light: #cdb4db;
+  --colour-purple-lighter: #cdb4db;
   --colour-pink-light: #ffc8dd;
   --colour-pink: #ffafcc;
   --colour-blue-light: #bde0fe;
@@ -29,8 +36,8 @@
   --header-background-colour: var(--colour-purple-darkest);
 
   /* Body configuration */
-  --body-default-colour: var(--colour-dark-purple);
-  --body-background-colour: var(--colour-purple-darkest);
+  --body-default-colour: var(--colour-beige);
+  --body-background-colour: var(--colour-purple-900);
 }
 
 /*
@@ -42,8 +49,8 @@
   margin: 0px auto;
   padding: 1rem;
 
-  border-left: 1px solid red;
-  border-right: 1px solid red;
+  /* border-left: 1px solid red;
+  border-right: 1px solid red; */
 }
 
 @media screen and (min-width: 600px) {
@@ -89,6 +96,54 @@ header .nav-bar h2 {
   header .nav-bar h2 {
     font-size: 1.8rem;
   }
+}
+
+/*
+ HERO
+*/
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem 0rem;
+  padding: 2rem 0rem;
+  /* border: 1px solid var(--colour-purple-400); */
+  background-color: var(--colour-purple-800);
+  /* background: linear-gradient(
+    135deg,
+    var(--colour-purple-700),
+    var(--colour-purple-800)
+  ); */
+  background-image: url("./images/working-group.jpg");
+  background-size: cover;
+  background-position: bottom;
+}
+
+/*
+Photo by cottonbro studio: https://www.pexels.com/photo/woman-in-white-long-sleeve-shirt-sitting-beside-woman-in-red-shirt-4778621/
+*/
+
+.hero h1 {
+  font-size: 4rem;
+  text-align: center;
+
+  color: var(--colour-purple-200);
+}
+
+@media screen and (min-width: 600px) {
+  .hero h1 {
+    font-size: 6rem;
+  }
+}
+
+.hero svg {
+  padding: 1rem;
+  height: 200px;
+  width: auto;
+  fill: var(--colour-purple-lighter);
+  background-color: var(--colour-purple-500);
+  border-radius: 100%;
 }
 
 /*
