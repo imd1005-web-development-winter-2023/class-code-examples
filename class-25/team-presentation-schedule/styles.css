@@ -40,11 +40,11 @@
 
   /* Header configuration */
   --header-heading-colour: var(--colour-blue-light);
-  --header-background-colour: var(--colour-gray-dark);
+  --header-background-colour: var(--colour-gray-darker);
 
   /* Body configuration */
   --body-default-colour: var(--colour-blue-light);
-  --body-background-colour: var(--colour-gray-dark);
+  --body-background-colour: var(--colour-gray-darker);
 }
 
 /*
@@ -80,17 +80,17 @@
   margin: 1.5rem 0;
   padding: 1.5rem;
   border-radius: 15px;
-  border: 3px solid var(--colour-white);
-  background-color: var(--colour-gray-darker);
+  /* border: 3px solid var(--colour-blue); */
+  background-color: var(--colour-gray-dark);
 }
 
 .events .event h2 {
   font-size: 1.8rem;
-  color: var(--colour-beige);
+  color: var(--colour-blue-light);
 }
 
 .events .event .time {
-  --event-colours: var(--colour-blue-light);
+  --event-colours: var(--colour-orange);
 
   font-size: 0.8rem;
   color: var(--event-colours);
@@ -143,10 +143,16 @@ Photo by cottonbro studio: https://www.pexels.com/photo/woman-in-white-long-slee
 
 .hero svg {
   padding: 1rem;
-  height: 500px;
+  height: 400px;
   width: auto;
   fill: var(--colour-gray-dark);
   border-radius: 100%;
+}
+
+@media screen and (min-width: 600px) {
+  .hero svg {
+    height: 500px;
+  }
 }
 
 /*

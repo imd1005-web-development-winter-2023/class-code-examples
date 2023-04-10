@@ -4,7 +4,7 @@
     "end": "2023-04-11T12:05:00",
     "type": "simple",
     "details": {
-      "title": "Something"
+      "title": "Snack"
     }
   },
   {
@@ -12,7 +12,7 @@
     "end": "2023-04-11T12:15:00",
     "type": "simple",
     "details": {
-      "title": "Opening remarks"
+      "title": "Closing remarks"
     }
   },
   {
@@ -84,7 +84,7 @@
     "end": "2023-04-11T15:15:00",
     "type": "simple",
     "details": {
-      "title": "Opening remarks"
+      "title": "Closing remarks"
     }
   },
   {
