@@ -8,8 +8,14 @@
 :root {
   /*
     Core colours
-    https://coolors.co/palette/f4f1de-e07a5f-3d405b-81b29a-f2cc8f
+    https://coolors.co/palette/3d5a80-98c1d9-e0fbfc-ee6c4d-293241
   */
+
+  --colour-gray-dark: #293241;
+  --colour-orange: #ee6c4d;
+  --colour-blue-lightest: #e0fbfc;
+  --colour-blue-light: #98c1d9;
+  --colour-blue-dark: #3d5a80;
 
   --colour-purple-900: #1a001c;
   --colour-purple-800: #250327;
@@ -25,26 +31,26 @@
   --colour-purple-lighter: #cdb4db;
   --colour-pink-light: #ffc8dd;
   --colour-pink: #ffafcc;
-  --colour-blue-light: #bde0fe;
+  --colour-blue-100: #bde0fe;
   --colour-blue: #a2d2ff;
   --colour-blue-dark: #314354;
   --colour-beige: #f8faf9;
   --colour-white: #fcfffe;
 
   /* Header configuration */
-  --header-heading-colour: var(--colour-purple-light);
-  --header-background-colour: var(--colour-purple-darkest);
+  --header-heading-colour: var(--colour-blue-light);
+  --header-background-colour: var(--colour-gray-dark);
 
   /* Body configuration */
-  --body-default-colour: var(--colour-beige);
-  --body-background-colour: var(--colour-purple-900);
+  --body-default-colour: var(--colour-blue-light);
+  --body-background-colour: var(--colour-gray-dark);
 }
 
 /*
  CONTAINER
 */
 .container {
-  max-width: 660px;
+  max-width: 750px;
   width: 100%;
   margin: 0px auto;
   padding: 1rem;
@@ -57,6 +63,71 @@
   .container {
     padding: 2rem;
   }
+}
+
+/*
+ EVENTS
+*/
+
+.events {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.events .simple,
+.events .team {
+  margin: 1.5rem 0;
+  padding: 1.5rem;
+  border: 1px solid var(--colour-blue-dark);
+}
+
+/*
+ MAIN
+*/
+
+main h1 {
+  color: var(--colour-blue-light);
+  font-size: 3.5rem;
+}
+
+/*
+ HERO
+*/
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 6rem 0rem;
+  padding: 0rem 0rem;
+
+  background: var(--colour-orange);
+  border-radius: 15px;
+}
+
+/*
+Photo by cottonbro studio: https://www.pexels.com/photo/woman-in-white-long-sleeve-shirt-sitting-beside-woman-in-red-shirt-4778621/
+*/
+
+.hero h1 {
+  font-size: 4rem;
+  text-align: center;
+  color: var(--colour-purple-200);
+}
+
+@media screen and (min-width: 600px) {
+  .hero h1 {
+    font-size: 6rem;
+  }
+}
+
+.hero svg {
+  padding: 1rem;
+  height: 500px;
+  width: auto;
+  fill: var(--colour-gray-dark);
+  border-radius: 100%;
 }
 
 /*
@@ -96,54 +167,6 @@ header .nav-bar h2 {
   header .nav-bar h2 {
     font-size: 1.8rem;
   }
-}
-
-/*
- HERO
-*/
-
-.hero {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 2rem 0rem;
-  padding: 2rem 0rem;
-  /* border: 1px solid var(--colour-purple-400); */
-  background-color: var(--colour-purple-800);
-  /* background: linear-gradient(
-    135deg,
-    var(--colour-purple-700),
-    var(--colour-purple-800)
-  ); */
-  background-image: url("./images/working-group.jpg");
-  background-size: cover;
-  background-position: bottom;
-}
-
-/*
-Photo by cottonbro studio: https://www.pexels.com/photo/woman-in-white-long-sleeve-shirt-sitting-beside-woman-in-red-shirt-4778621/
-*/
-
-.hero h1 {
-  font-size: 4rem;
-  text-align: center;
-
-  color: var(--colour-purple-200);
-}
-
-@media screen and (min-width: 600px) {
-  .hero h1 {
-    font-size: 6rem;
-  }
-}
-
-.hero svg {
-  padding: 1rem;
-  height: 200px;
-  width: auto;
-  fill: var(--colour-purple-lighter);
-  background-color: var(--colour-purple-500);
-  border-radius: 100%;
 }
 
 /*

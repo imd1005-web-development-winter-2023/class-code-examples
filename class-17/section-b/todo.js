@@ -31,6 +31,8 @@ function gah() {
 }
 
 function renderToDoList() {
+  console.log(todoList.firstChild);
+
   // Clear all of the entries in the list
   while (todoList.firstChild) {
     todoList.removeChild(todoList.firstChild);
