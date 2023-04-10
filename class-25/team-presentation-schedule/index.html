@@ -80,23 +80,17 @@
             <h1>Schedule</h1>
 
             <ul class="events">
-              <li v-for="event in events">
+              <li v-for="event in events" class="event">
                 <div v-if="event.type === 'simple'">
-                  <div class="simple">
-                    {{ event.details.title }}
-                    <p>
-                      {{formatTime(event.start) }} - {{formatTime(event.end) }}
-                    </p>
-                  </div>
+                  <h2>{{ event.details.title }}</h2>
                 </div>
                 <div v-if="event.type === 'team'">
-                  <div class="team">
-                    <h2>{{ teamData(event.details.team)?.name }}</h2>
-                    <p></p>
-                    <p>
-                      {{formatTime(event.start) }} - {{formatTime(event.end) }}
-                    </p>
-                  </div>
+                  <h2>{{ teamData(event.details.team)?.name }}</h2>
+                </div>
+                <div class="time">
+                  <p>
+                    {{formatTime(event.start) }} - {{formatTime(event.end) }}
+                  </p>
                 </div>
               </li>
             </ul>

@@ -75,11 +75,21 @@
   padding: 0;
 }
 
-.events .simple,
-.events .team {
+.events .event {
   margin: 1.5rem 0;
   padding: 1.5rem;
+  border-radius: 15px;
   border: 1px solid var(--colour-blue-dark);
+  background-color: var(--colour-blue-dark);
+}
+
+.events .time {
+  font-size: 0.8rem;
+  display: inline-block;
+  margin: 1rem 0rem 0rem 0rem;
+  padding: 0.1rem 0.8rem;
+  border: 1px solid var(--colour-blue-100);
+  border-radius: 15px;
 }
 
 /*
