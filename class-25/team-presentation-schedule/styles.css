@@ -11,6 +11,7 @@
     https://coolors.co/palette/3d5a80-98c1d9-e0fbfc-ee6c4d-293241
   */
 
+  --colour-gray-darker: #1d232e;
   --colour-gray-dark: #293241;
   --colour-orange: #ee6c4d;
   --colour-blue-lightest: #e0fbfc;
@@ -79,17 +80,25 @@
   margin: 1.5rem 0;
   padding: 1.5rem;
   border-radius: 15px;
-  border: 1px solid var(--colour-blue-dark);
-  background-color: var(--colour-blue-dark);
+  border: 3px solid var(--colour-white);
+  background-color: var(--colour-gray-darker);
 }
 
-.events .time {
+.events .event h2 {
+  font-size: 1.8rem;
+  color: var(--colour-beige);
+}
+
+.events .event .time {
+  --event-colours: var(--colour-blue-light);
+
   font-size: 0.8rem;
+  color: var(--event-colours);
   display: inline-block;
   margin: 1rem 0rem 0rem 0rem;
   padding: 0.1rem 0.8rem;
-  border: 1px solid var(--colour-blue-100);
-  border-radius: 15px;
+  border: 1px solid var(--event-colours);
+  border-radius: 8px;
 }
 
 /*
