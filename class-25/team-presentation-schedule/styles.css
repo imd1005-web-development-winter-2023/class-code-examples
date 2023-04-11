@@ -16,6 +16,7 @@
   --colour-orange: #ee6c4d;
   --colour-blue-lightest: #e0fbfc;
   --colour-blue-light: #98c1d9;
+  --colour-blue-main: #638092;
   --colour-blue-dark: #3d5a80;
 
   --colour-purple-900: #1a001c;
@@ -86,6 +87,72 @@
 
 .events .event h2 {
   font-size: 1.8rem;
+  color: var(--colour-blue);
+}
+
+.events .event h2.team {
+  color: var(--colour-blue-light);
+}
+
+.events .event h2.simple {
+  color: var(--colour-blue-main);
+}
+
+.events .event ul.team-members {
+  list-style-type: none;
+  margin: 0.5rem 0rem 0rem 0rem;
+  padding: 0px;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.events .event ul.team-members li {
+  color: var(--colour-blue-main);
+}
+
+.events .event ul.team-members li + * {
+  margin-left: 0.5rem;
+}
+
+.events .event ul.team-members li a {
+  color: var(--colour-blue-main);
+  transition: all 300ms ease-in-out;
+}
+
+.events .event ul.team-members li a:hover {
+  color: var(--colour-blue);
+}
+
+.events .event .team-code-link {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.events .event ul.project-info {
+  list-style-type: none;
+  margin: 0rem;
+  padding: 0rem;
+}
+
+.events .event ul.project-info li {
+  display: flex;
+}
+
+.events .event .team-code-link svg {
+  margin-right: 0.5rem;
+  height: auto;
+  width: 1rem;
+  fill: var(--colour-blue);
+}
+
+.events .event a.team-code-link {
+  color: var(--colour-blue);
+  transition: all 300ms ease-in-out;
+}
+
+.events .event a.team-code-link:hover {
   color: var(--colour-blue-light);
 }
 

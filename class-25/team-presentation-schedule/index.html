@@ -82,10 +82,64 @@
             <ul class="events">
               <li v-for="event in events" class="event">
                 <div v-if="event.type === 'simple'">
-                  <h2>{{ event.details.title }}</h2>
+                  <h2 class="simple">{{ event.details.title }}</h2>
                 </div>
                 <div v-if="event.type === 'team'">
-                  <h2>{{ teamData(event.details.team)?.name }}</h2>
+                  <h2 class="team">{{ teamData(event.details.team)?.name }}</h2>
+
+                  <ul class="project-info">
+                    <li>
+                      <a
+                        v-bind:href="'https://github.com/imd1005-web-development-winter-2023/group-project-' + teamData(event.details.team)?.name.toLowerCase()"
+                        class="team-code-link"
+                        rel="external nofollow"
+                      >
+                        <svg
+                          class="team-code"
+                          version="1.1"
+                          viewBox="0 0 1200 1200"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="m545.45 218.18c0 101.81-69.75 187.34-164.06 211.41 0.26953 2.2188 0.42578 4.4766 0.42578 6.7656v109.09h327.27c60.246 0 109.09-48.84 109.09-109.09 0-2.2891 0.15625-4.5469 0.42188-6.7656-94.309-24.074-164.06-109.6-164.06-211.41 0-120.5 97.691-218.18 218.18-218.18 120.49 0 218.18 97.684 218.18 218.18 0 101.81-69.754 187.34-164.06 211.41 0.26562 2.2188 0.42578 4.4766 0.42578 6.7656 0 120.5-97.691 218.18-218.18 218.18h-327.27v109.09l-0.023437 1.3594-0.10938 2.1133c-0.050782 1.1094-0.16016 2.207-0.29297 3.2891 94.312 24.078 164.06 109.61 164.06 211.42 0 120.5-97.691 218.18-218.18 218.18-120.49 0-218.18-97.684-218.18-218.18 0-101.81 69.754-187.34 164.06-211.42-0.1875-1.5703-0.32031-3.168-0.37109-4.7773l-0.054688-1.9844v-327.27c0-2.2891 0.16016-4.5469 0.42578-6.7656-94.309-24.074-164.06-109.6-164.06-211.41 0-120.5 97.691-218.18 218.18-218.18 120.49 0 218.18 97.684 218.18 218.18zm-218.18 109.09c60.246 0 109.09-48.84 109.09-109.09 0-60.254-48.844-109.09-109.09-109.09-60.246 0-109.09 48.84-109.09 109.09 0 60.25 48.844 109.09 109.09 109.09zm545.45 0c60.246 0 109.09-48.84 109.09-109.09 0-60.254-48.844-109.09-109.09-109.09-60.246 0-109.09 48.84-109.09 109.09 0 60.25 48.844 109.09 109.09 109.09zm-436.36 654.54c0 60.254-48.844 109.09-109.09 109.09-60.246 0-109.09-48.84-109.09-109.09 0-60.25 48.844-109.09 109.09-109.09 60.246 0 109.09 48.84 109.09 109.09z"
+                            fill-rule="evenodd"
+                          />
+                        </svg>
+                        Repo</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        v-bind:href="'https://imd1005-web-development-winter-2023.github.io/group-project-' + teamData(event.details.team)?.name.toLowerCase() + '/'"
+                        class="team-code-link"
+                        rel="external nofollow"
+                      >
+                        <svg
+                          class="team-code"
+                          version="1.1"
+                          viewBox="0 0 1200 1200"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="m660 828.57h420c66.277 0 120-53.723 120-120v-540c0-66.273-53.723-120-120-120h-960c-66.277 0-120 53.727-120 120v540c0 66.277 53.723 120 120 120h420v180h-240c-33.137 0-60 26.863-60 60s26.863 60 60 60h600c33.133 0 60-26.863 60-60s-26.867-60-60-60h-240zm-540-120v-540h960v540z"
+                            fill-rule="evenodd"
+                          />
+                        </svg>
+
+                        Pages Site</a
+                      >
+                    </li>
+                  </ul>
+
+                  <ul class="team-members">
+                    <li v-for="member in teamData(event.details.team)?.members">
+                      <a
+                        v-bind:href="'https://github.com/' + member"
+                        rel="external nofollow"
+                        >@{{ member }}</a
+                      >
+                    </li>
+                  </ul>
                 </div>
                 <div class="time">
                   <p>
